@@ -7,6 +7,8 @@ import Profile from './pages/Profile';
 import Course from './pages/Course';
 import AdminDashboard from './pages/AdminDashboard';
 import Navbar from './components/Navbar';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile />} />
