@@ -9,6 +9,7 @@ import AdminDashboard from './pages/AdminDashboard';
 import Navbar from './components/Navbar';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import ForgotPassword from './pages/ForgotPassword';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/course/:id" element={<Course />} />
           <Route path="/admin" element={<AdminDashboard />} />
