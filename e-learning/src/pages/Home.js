@@ -1,41 +1,24 @@
-import React from "react";
-import CourseCard from "../components/CourseCard";
+import React from 'react';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import '../Style/Home.css';
 
 const Home = () => {
-  const sampleCourse = {
-    image: "https://via.placeholder.com/150",
-    title: "React for Beginners",
-    category: "Web Development",
-    price: 49.99,
-    teacher: "John Doe",
-    teacherImage: 'https://via.placeholder.com/30', 
-    rating: 4,
-  };
-
   return (
-    <div className="container mt-5">
-      <div className="jumbotron">
-        <h1 className="display-4">Welcome to the E-Learning Platform</h1>
-        <p className="lead">Your gateway to quality online education.</p>
-        <hr className="my-4" />
-        <p>
-          Explore our courses and enhance your skills with our comprehensive
-          learning materials.
-        </p>
-        <a className="btn btn-primary btn-lg" href="/register" role="button">
-          Get Started
-        </a>
-      </div>
-
-      <div className="container mt-5">
-        <h1 className="text-center">Our Courses</h1>
-        <div className="row">
-          <div className="col-md-4">
-            <CourseCard {...sampleCourse} />
+    <Container fluid className="home-banner d-flex align-items-center">
+      <Row className="w-100">
+        <Col md={6} className="d-flex flex-column justify-content-center align-items-start">
+          <h1>Change is the end result of all true <span className="text-success">Learning</span></h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique at libero a gravida.</p>
+          <div className="button-group">
+            <Button variant="success" className="me-3">Book Online</Button>
+            <Button variant="outline-dark">Watch Video</Button>
           </div>
-        </div>
-      </div>
-    </div>
+        </Col>
+        <Col md={6} className="d-flex justify-content-center align-items-center">
+          <img src="https://kcballet.org/wp-content/uploads/2019/11/skyler-taylor.jpg" alt="Teacher" className="img-fluid" width={400} />
+        </Col>
+      </Row>
+    </Container>
   );
 };
 
