@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import ForgotPassword from './pages/ForgotPassword';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/course/:id" element={<Course />} />
           <Route path="/admin" element={<AdminDashboard />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
