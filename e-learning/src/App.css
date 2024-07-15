@@ -6,23 +6,82 @@
   color: #00000085;
 }
 .trusted-brands h2{
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #00000085;
 }
+
+
+/* Category Section */
+.categorySection  .card{
+  min-height: 300px;
+}
+.categorySection .circle{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.categorySection h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00000085;
+}
+.categorySection .card{
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+
+/* Find Courses Section */
+.findCourses h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00000085;
+}
+.findCourses .card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+.findCourses .card .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #28a745;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 0.8em;
+}
+.findCourses .card .price {
+  font-size: 1.5em;
+  color: #ff6b6b;
+}
+.findCourses .text-danger {
+  color: #ff6b6b !important;
+}
+.findCourses .card{
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  min-height: 480px;
+}
+
 
 /* Footer */
 .footer {
   background-color: #343a40;
   color: #ffffff;
 }
-
 .footer .icon {
   color: #ffffff;
   margin: 0 10px;
   transition: color 0.3s;
 }
-
 .footer .icon:hover {
   color: #007bff;
 }

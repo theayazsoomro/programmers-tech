@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "../Style/Home.css";
 import TrustedBrands from "../components/TrustedBrands";
+import CategorySection from "../components/CategorySection";
+import FindCourses from "../components/FindCourses";
 
 const Home = () => {
   return (
@@ -37,8 +39,8 @@ const Home = () => {
               className="d-flex justify-content-lg-end justify-content-center align-items-center"
             >
               {/* <img src="https://kcballet.org/wp-content/uploads/2019/11/skyler-taylor.jpg" alt="Teacher" className="img-fluid clips" width={400} /> */}
-              <div class="shape-outer parallelogram">
-                <div class="shape-inner parallelogram"></div>
+              <div className="shape-outer parallelogram">
+                <div className="shape-inner parallelogram"></div>
               </div>
             </Col>
           </Row>
@@ -47,6 +49,12 @@ const Home = () => {
       
       {/* Trusted Brands */}
       <TrustedBrands />
+
+      {/* Category Section */}
+      <CategorySection />
+
+      {/* Find Courses */}
+      <FindCourses />
     </React.Fragment>
   );
 };
