@@ -4,6 +4,7 @@ import "../Style/Home.css";
 import TrustedBrands from "../components/TrustedBrands";
 import CategorySection from "../components/CategorySection";
 import FindCourses from "../components/FindCourses";
+import Testimonials from "../components/Testimonials";
 
 const Home = () => {
   return (
@@ -55,6 +56,9 @@ const Home = () => {
 
       {/* Find Courses */}
       <FindCourses />
+
+      {/* Testimonials */}
+      <Testimonials />
     </React.Fragment>
   );
 };
