@@ -11,6 +11,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import ForgotPassword from './pages/ForgotPassword';
 import Footer from './components/Footer';
+import FindCourses from './components/FindCourses';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/course" element={<Course />} />
           <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/category/:categoryName" element={<FindCourses />} />
         </Routes>
         <Footer />
       </div>

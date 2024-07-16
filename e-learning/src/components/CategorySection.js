@@ -7,6 +7,7 @@ import {
   faDatabase,
   faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const CategorySection = () => {
   return (
@@ -24,9 +25,11 @@ const CategorySection = () => {
                 <Card.Text>
                   Learn to code with our programming courses
                 </Card.Text>
-                <Button variant="primary" href="/programming">
-                  View Courses <FontAwesomeIcon icon={faArrowRight} />
-                </Button>
+                <Link to={`category/programming`}>
+                  <Button variant="primary">
+                    View Courses <FontAwesomeIcon icon={faArrowRight} />
+                  </Button>
+                </Link>
               </Card.Body>
             </Card>
           </Col>
@@ -40,9 +43,11 @@ const CategorySection = () => {
                 <Card.Text>
                   Master design skills with our design courses
                 </Card.Text>
-                <Button variant="primary" href="/design">
-                  View Courses <FontAwesomeIcon icon={faArrowRight} />
-                </Button>
+                <Link to={`category/design`}>
+                  <Button variant="primary">
+                    View Courses <FontAwesomeIcon icon={faArrowRight} />
+                  </Button>
+                </Link>
               </Card.Body>
             </Card>
           </Col>
@@ -56,9 +61,11 @@ const CategorySection = () => {
                 <Card.Text>
                   Learn about databases with our database courses
                 </Card.Text>
-                <Button variant="primary" href="/database">
-                  View Courses <FontAwesomeIcon icon={faArrowRight} />
-                </Button>
+                <Link to={`category/database`}>
+                  <Button variant="primary" href="/database">
+                    View Courses <FontAwesomeIcon icon={faArrowRight} />
+                  </Button>
+                </Link>
               </Card.Body>
             </Card>
           </Col>
