@@ -1,12 +1,10 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import FindCourses from '../components/FindCourses';
 
 const Course = () => {
-  const { id } = useParams();
   return (
     <div>
-      <h2>Course {id}</h2>
-      <p>Course content will be displayed here.</p>
+      <FindCourses />
     </div>
   );
 };

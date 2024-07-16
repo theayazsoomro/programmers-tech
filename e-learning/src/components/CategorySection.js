@@ -12,7 +12,7 @@ const CategorySection = () => {
   return (
     <Container fluid className="categorySection my-lg-5 my-md-3 bg-light">
       <Container className="py-5">
-      <h1 className="text-center">Featured Category</h1>
+      <h2 className="text-center">Featured <span style={{color: '#188ef4'}}>Category</span></h2>
         <Row className="my-5">
           <Col md={4}>
             <Card className="text-center my-2">

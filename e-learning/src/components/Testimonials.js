@@ -44,7 +44,7 @@ return (
         <Container>
             <Row className="justify-content-center">
                 <Col md={8} className="text-center">
-                    <h2 className="mb-3">Check what our Customers are Saying</h2>
+                    <h2 className="mb-3">Check what our <span style={{color: '#188ef4'}}>Customers</span> are Saying</h2>
                     <h6 className="subtitle font-weight-normal">
                         You can rely on our amazing features list and also our customer services will be a great experience for you without a doubt.
                     </h6>

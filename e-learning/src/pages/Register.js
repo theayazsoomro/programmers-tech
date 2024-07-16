@@ -7,7 +7,8 @@ const Register = () => {
     <Container fluid className="d-flex justify-content-center align-items-center vh-100 bg-light">
       <Card style={{ width: '25rem' }} className="p-4 shadow border-0">
         <Card.Body>
-          <h2 className="text-center mb-4">Create Account</h2>
+          <h2 className="text-center mb-4" style={{fontWeight: 'bold',
+  color: '#00000085'}}>Create Account</h2>
           <Form>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
