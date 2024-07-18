@@ -6,8 +6,23 @@ import CategorySection from "../components/CategorySection";
 import FindCourses from "../components/FindCourses";
 import Testimonials from "../components/Testimonials";
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
 const Home = () => {
+
+  // Example function to fetch data from the backend
+  const fetchData = async () => {
+    try {
+      const response = await axios.get('http://localhost:5001/api/users');
+      console.log(response.data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+  
+  // Call the fetchData function when needed
+  fetchData();
+  
   return (
     <React.Fragment>
       <div

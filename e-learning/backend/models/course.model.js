@@ -9,9 +9,33 @@ const CourseSchema = new mongoose.Schema({
     type: String,
     required: false,
   },
-  instructor: {
-    "name": String,
-    "skill": String
+  category: {
+    type: String,
+    required: true,
+  },
+  price: {
+    type: String,
+    required: true,
+  },
+  lessons: {
+    type: String,
+    required: true,
+  },
+  duration: {
+    type: String,
+    required: true,
+  },
+  rating: {
+    type: String,
+    required: false,
+  },
+  instructor: { 
+    type: String,
+    required: false,
+  },
+  imgSrc: {
+    type: String,
+    required: false,
   },
   date: {
     type: Date,
