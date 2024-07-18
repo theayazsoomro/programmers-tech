@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { createCourse, getCourses } = require('../controllers/courses');
+const { createCourse, getCourses } = require('../controllers/courses.controller');
 
 // @route POST /api/courses
 // @desc Create a new course

@@ -1,4 +1,4 @@
-const Course = require('../models/Course');
+const Course = require('../models/course.model');
 
 exports.createCourse = async (req, res) => {
   const { title, description, instructor } = req.body;

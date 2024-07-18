@@ -1,7 +1,10 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const User = require('../models/User');
+const User = require('../models/user.model');
+const inventoryModel = require('../models/inventory.model');
 
+
+// Register a new user
 exports.registerUser = async (req, res) => {
   const { name, email, password } = req.body;
   try {
@@ -42,6 +45,8 @@ exports.registerUser = async (req, res) => {
   }
 };
 
+
+// Login a user
 exports.loginUser = async (req, res) => {
   const { email, password } = req.body;
   try {
@@ -72,6 +77,18 @@ exports.loginUser = async (req, res) => {
     );
   } catch (err) {
     console.error(err.message);
+    res.status(500).send('Server error');
+  }
+};
+
+
+// Get all users
+exports.getAllUsers = async (req, res) => {
+  try {
+    const users = await inventoryModel.find();
+    res.status(200).json(users);
+  } catch (error) {
+    console.error(error.message);
     res.status(500).send('Server error');
   }
 };
