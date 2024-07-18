@@ -10,8 +10,8 @@ const CourseSchema = new mongoose.Schema({
     required: false,
   },
   instructor: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
+    "name": String,
+    "skill": String
   },
   date: {
     type: Date,
