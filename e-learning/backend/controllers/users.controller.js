@@ -1,7 +1,7 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/user.model');
-const inventoryModel = require('../models/inventory.model');
+const getAllUsers = require('../models/getAllUsers.model');
 
 
 // Register a new user
@@ -85,7 +85,7 @@ exports.loginUser = async (req, res) => {
 // Get all users
 exports.getAllUsers = async (req, res) => {
   try {
-    const users = await inventoryModel.find();
+    const users = await getAllUsers.find();
     res.status(200).json(users);
   } catch (error) {
     console.error(error.message);

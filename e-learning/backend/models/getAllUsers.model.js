@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const InventorySchema = new mongoose.Schema({
+const AllUsersSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
@@ -20,4 +20,4 @@ const InventorySchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('Users', InventorySchema, 'users');
+module.exports = mongoose.model('Users', AllUsersSchema, 'users');
