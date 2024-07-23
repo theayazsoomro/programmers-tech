@@ -2,16 +2,17 @@
 import React from 'react';
 import '../styles/Sidebar.css';
 
-const Sidebar = () => {
+const Sidebar = ({ isVisible }) => {
   return (
-    <div className="sidebar">
+    <aside className={`sidebar ${isVisible ? 'visible' : ''}`}>
       <ul>
         <li>Home</li>
         <li>Trending</li>
         <li>Subscriptions</li>
         <li>Library</li>
+        <li>History</li>
       </ul>
-    </div>
+    </aside>
   );
 };
 

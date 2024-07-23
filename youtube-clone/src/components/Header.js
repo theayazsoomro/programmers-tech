@@ -2,17 +2,22 @@
 import React from 'react';
 import '../styles/Header.css';
 
-const Header = () => {
+const Header = ({ onToggleSidebar }) => {
   return (
-    <div className="header">
-      <img
-        className="header__logo"
-        src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg"
-        alt="YouTube Logo"
-      />
+    <header className="header">
+      <div className="header__left">
+        <button className="header__toggle" onClick={onToggleSidebar}>
+          ☰
+        </button>
+        <img
+          className="header__logo"
+          src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg"
+          alt="Logo"
+        />
+      </div>
       <input className="header__search" type="text" placeholder="Search" />
-      <button className="header__button">Search</button>
-    </div>
+      <button className="header__button">Sign In</button>
+    </header>
   );
 };
 

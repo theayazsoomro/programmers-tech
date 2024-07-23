@@ -1,9 +1,24 @@
 /* src/styles/App.css */
 .app {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__body {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .app__body {
     flex-direction: column;
   }
-  .app__body {
-    display: flex;
+
+  .main-content {
+    padding: 20px;
   }
-  
+}
