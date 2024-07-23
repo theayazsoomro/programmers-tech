@@ -1,0 +1,15 @@
+/* src/styles/Sidebar.css */
+.sidebar {
+    width: 200px;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  .sidebar li {
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
