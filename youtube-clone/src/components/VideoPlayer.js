@@ -1,16 +1,18 @@
-// src/components/VideoPlayer/VideoPlayer.js
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import '../styles/VideoPlayer.css';
 
-const VideoPlayer = ({ videoId }) => {
+const VideoPlayer = () => {
+  const { videoId } = useParams();
+
   return (
-    <div className="videoPlayer">
+    <div className="video-player">
       <iframe
-        src={`https://www.youtube.com/embed/${videoId}`}
+        src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
         frameBorder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-        title="video"
+        title="YouTube video player"
       ></iframe>
     </div>
   );

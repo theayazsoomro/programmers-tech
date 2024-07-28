@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/VideoList.css';
 
 const VideoList = () => {
@@ -22,18 +23,11 @@ const VideoList = () => {
     <div className="video-list">
       {videos.map(video => (
         <div key={video.id} className="video-card">
-          {/* <img src={video.thumbnail} alt={video.title} /> */}
-          <iframe
-            width="100%"
-            height="200"
-            src={`https://www.youtube.com/embed/${video.id}`}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            title={video.title}
-          ></iframe>
-          <h3>{video.title}</h3>
-          <p>{video.description}</p>
+          <Link to={`/video/${video.id}`}>
+            <img src={video.thumbnail} alt={video.title} />
+            <h3>{video.title}</h3>
+            <p>{video.description}</p>
+          </Link>
         </div>
       ))}
     </div>
