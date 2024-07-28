@@ -1,0 +1,34 @@
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .video-card {
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .video-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .video-card h3 {
+    font-size: 18px;
+    margin: 10px;
+  }
+  
+  .video-card p {
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px;
+  }
+  
