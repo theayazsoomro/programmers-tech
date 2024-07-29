@@ -1,12 +1,13 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 const Header = () => {
     return (
         <header>
             <Navbar bg="light" expand="lg">
                 <Container fluid>
-                    <Navbar.Brand href="#home">ProgrammersTech</Navbar.Brand>
+                    <Navbar.Brand href="#home"><Link to='/' className='text-dark' style={{textDecoration: "none"}}>ProgrammersTech</Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarNav" />
                     <Navbar.Collapse id="navbarNav">
                         <Nav className="me-auto">
